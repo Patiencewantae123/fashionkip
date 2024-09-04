@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fashion Design Workflow Dashboard</title>
+    <meta name="description" content="">
+    <meta name="author" content="yourname">
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700|Roboto:400,700' rel='stylesheet' type='text/css'>
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="css/templatemo-style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <
+  
+  </head>
+  <body>
+    <!-- Left column -->
+    <div class="templatemo-flex-row">
+      <div class="templatemo-sidebar">
+        <header class="templatemo-site-header">
+          <div class="square"></div>
+          <h1>Fashion Dashboard</h1>
+        </header>
+        <div class="profile-photo-container">
+          <img src="images/profile-photo.jpg" alt="Profile Photo" class="img-responsive img-circle" style="border: 4px solid #ffffff;">
+          <div class="profile-photo-overlay"></div>
+        </div>
+        <!-- Search box -->
+        <form class="templatemo-search-form" role="search">
+          <div class="input-group">
+              <button type="submit" class="fa fa-search btn btn-primary"></button>
+              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+          </div>
+        </form>
+        <div class="mobile-menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+        <nav class="templatemo-left-nav">
+          <ul>
+            <li><a href="index.php" class="active"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
+            <li><a href="design-projects.html"><i class="fa fa-pencil fa-fw"></i>Design Projects</a></li>
+            <li><a href="materials.html"><i class="fa fa-cogs fa-fw"></i>Materials</a></li>
+            <li><a href="deadlines.html"><i class="fa fa-calendar fa-fw"></i>Deadlines</a></li>
+            <li><a href="task-management.html"><i class="fa fa-tasks fa-fw"></i>Task Management</a></li>
+            <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Preferences</a></li>
+            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>Sign Out</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Main content -->
+      <div class="templatemo-content col-1 light-gray-bg">
+        <div class="templatemo-top-nav-container">
+          <div class="row">
+            <nav class="templatemo-top-nav col-lg-12 col-md-12">
+              <ul class="text-uppercase">
+                <li><a href="" class="active">Admin Panel</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Overview</a></li>
+                <li><a href="login.html">Sign in form</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="templatemo-content-container">
+          <div class="templatemo-flex-row flex-content-row">
+            <div class="templatemo-content-widget white-bg col-2">
+              <i class="fa fa-paint-brush" style="color: #007bff;"></i>
+              <div class="square" style="background-color: #007bff;"></div>
+              <h2 class="templatemo-inline-block">Fashion Design Details</h2><hr>
+              <p>Explore the latest trends, manage fabric usage, and keep track of upcoming deadlines. Use the dashboard to stay updated on your fashion design projects and tasks.</p>
+            </div>
+            <div class="templatemo-content-widget white-bg col-1 text-center">
+              <i class="fa fa-project-diagram" style="color: #28a745;"></i>
+              <h2 class="text-uppercase">Current Collection</h2>
+              <h3 class="text-uppercase margin-bottom-10">Autumn 2024</h3>
+              <img src="images/collection-image.jpg" alt="Current Collection" class="img-circle img-thumbnail" style="border: 4px solid #28a745;">
+            </div>
+            <div class="templatemo-content-widget white-bg col-1">
+              <i class="fa fa-tasks" style="color: #ffc107;"></i>
+              <h2 class="text-uppercase">Task Progress</h2>
+              <h3 class="text-uppercase">Ongoing Tasks</h3><hr>
+              <div class="progress">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="templatemo-flex-row flex-content-row">
+            <div class="col-1 templatemo-overflow-hidden">
+              <div class="templatemo-content-widget white-bg templatemo-overflow-hidden">
+                <i class="fa fa-chart-pie" style="color: #17a2b8;"></i>
+                <div class="templatemo-chart-container">
+                  <h2 class="text-center">Fabric Usage<span class="badge">new</span></h2>
+                  <div id="pie_chart_div" class="templatemo-chart"></div> <!-- Pie chart div -->
+                </div>
+                <div class="templatemo-chart-container">
+                  <h2 class="text-center">Design Trends<span class="badge">new</span></h2>
+                  <div id="bar_chart_div" class="templatemo-chart"></div> <!-- Bar chart div -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="footer">
+            <p>Copyright &copy; 2084 Company Name | Design: Template Mo</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+    
+    <!-- JS -->
+    <script src="js/jquery-1.11.2.min.js"></script> <!-- jQuery -->
+    <script src="js/jquery-migrate-1.2.1.min.js"></script> <!-- jQuery Migrate Plugin -->
+    <script src="https://www.google.com/jsapi"></script> <!-- Google Chart -->
+    <script>
+      /* Google Chart */
+      google.load('visualization', '1.0', {'packages':['corechart']});
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        // Create the data table for fabric usage.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Fabric');
+        data.addColumn('number', 'Meters Used');
+        data.addRows([
+          ['Cotton', 50],
+          ['Silk', 30],
+          ['Wool', 20],
+          ['Linen', 40]
+        ]);
+
+        // Set chart options for pie chart.
+        var optionsPie = {'title':'Fabric Usage Breakdown', 'colors': ['#007bff', '#28a745', '#ffc107', '#dc3545']};
+
+        // Instantiate and draw our pie chart.
+        var pieChart = new google.visualization.PieChart(document.getElementById('pie_chart_div'));
+        pieChart.draw(data, optionsPie);
+
+        // Create the data table for design trends.
+        var dataBar = new google.visualization.DataTable();
+        dataBar.addColumn('string', 'Trend');
+        dataBar.addColumn('number', 'Popularity');
+        dataBar.addRows([
+          ['Vintage', 60],
+          ['Minimalist', 40],
+          ['Boho', 30],
+          ['Streetwear', 50]
+        ]);
+
+        // Set chart options for bar chart.
+        var optionsBar = {'title':'Design Trends Popularity', 'colors': ['#007bff', '#28a745', '#ffc107', '#dc3545']};
+
+        // Instantiate and draw our bar chart.
+        var barChart = new google.visualization.BarChart(document.getElementById('bar_chart_div'));
+        barChart.draw(dataBar, optionsBar);
+      }
+
+      $(document).ready(function(){
+        if($.browser.mozilla) {
+          $(window).bind('resize', function(e) {
+            if (window.RT) clearTimeout(window.RT);
+            window.RT = setTimeout(function() {
+              this.location.reload(false);
+            }, 200);
+          });      
+        } else {
+          $(window).resize(function() {
+            drawChart();
+          });  
+        }   
+      });
+    </script>
+    <script type="text/javascript" src="js/templatemo-script.js"></script> <!-- Templatemo Script -->
+  </body>
+</html>
